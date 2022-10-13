@@ -8,6 +8,7 @@
     "dev": "nodemon src/index"
   },
   "dependencies": {
+    "@apollo/server-plugin-landing-page-graphql-playground": "^4.0.0",
     "apollo-datasource-rest": "^0.11.0",
     "apollo-server": "^3.0.0",
     "graphql": "^15.5.1"
