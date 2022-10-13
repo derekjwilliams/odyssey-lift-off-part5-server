@@ -2,10 +2,7 @@ const { ApolloServer } = require('apollo-server');
 const typeDefs = require('./schema');
 const resolvers = require('./resolvers');
 const TrackAPI = require('./datasources/track-api');
-const {
-    ApolloServerPluginLandingPageLocalDefault,
-    ApolloServerPluginLandingPageProductionDefault 
-  } = require ('@apollo/server/plugin/landingPage/default');
+const { ApolloServerPluginLandingPageLocalDefault } = require ('@apollo/server/plugin/landingPage/default');
 
 async function startApolloServer(typeDefs, resolvers) {
   const plugins = [ApolloServerPluginLandingPageLocalDefault({ embed: true })];
